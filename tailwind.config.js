@@ -10,7 +10,7 @@ module.exports = {
       'panna':'#f8ece4',
       'beige':'#f0e7db',
       'scuro':'#1a202c',
-      }
+      },
     },
   },
   plugins: [],
