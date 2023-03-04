@@ -1,4 +1,9 @@
-import { Container, Box, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import { BioSection, BioYear } from "@/components/bio"
+import Paragraph from "@/components/paragraph"
+import Section from "@/components/section"
+import { ChevronRightIcon } from "@chakra-ui/icons"
+import { Container, Box, Heading, Image, useColorModeValue, Button } from "@chakra-ui/react"
+import Link from "next/link"
 
 const Page = () => {
   return (
@@ -8,17 +13,59 @@ const Page = () => {
       </Box>
 
       <Box display={{md:'flex'}}>
-        <Box flexGrow={1}>
+        <Box flexGrow={0.8}>
           <Heading as="h2" variant="page title">
-            Andrea Fay
+            Andre
           </Heading>
-          <p>WebDev, Cryptos, Sports & Music</p>
+          <p>Web Developer (React, Golang, Java)</p>
         </Box>
         <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align="center">
           <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid"
                  maxW="100px" maxH="100px" borderRadius="full" display="inline-block" src="/images/propic.png" alt="Profile Image" />
         </Box>
       </Box>
+      <Section>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <Paragraph>I'm a full-stack developer based in Milan with a passion for travelling.
+           I started working as a web developer in 2021 during covid.
+           Now I work remotely for my company and meanwhile, I learn new technologies to achieve my dreams! </Paragraph>
+        <Box align="center" my={4}>
+          <Link href="/works">
+            <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
+              My portfolio
+            </Button>
+          </Link>
+        </Box>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title" >
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1999</BioYear>
+          Hello World
+        </BioSection>
+        <BioSection>
+          <BioYear>2018</BioYear>
+          Graduated in Computer Science
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Started working as a Full-Stack Developer
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Sports, Music, Tech, Cryptos
+        </Paragraph>
+      </Section>
     </Container>
   )
 }
