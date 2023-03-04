@@ -2,7 +2,8 @@ import { BioSection, BioYear } from "@/components/bio"
 import Paragraph from "@/components/paragraph"
 import Section from "@/components/section"
 import { ChevronRightIcon } from "@chakra-ui/icons"
-import { Container, Box, Heading, Image, useColorModeValue, Button } from "@chakra-ui/react"
+import { Container, Box, Heading, Image, useColorModeValue, Button, List, ListItem } from "@chakra-ui/react"
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import Link from "next/link"
 
 const Page = () => {
@@ -66,6 +67,31 @@ const Page = () => {
           Sports, Music, Tech, Cryptos
         </Paragraph>
       </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="/">
+              <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoLinkedin/>} >
+                @andrea-fay
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/">
+              <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub/>} >
+                @andreafay
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+      </Section>
+      <Paragraph className="opacity-40 text-xs text-center font-semibold mt-10">
+        This website is a reproduction of craftz.dog by Takuya Matsuyama.
+      </Paragraph>
     </Container>
   )
 }
