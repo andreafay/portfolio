@@ -1,19 +1,8 @@
 import Logo from "./logo";
-import Link from "next/link";
 import {
-    Container,
     Box,
-    Stack,
-    Heading,
-    Flex,
-    Menu,
-    MenuItem,
-    MenuList,
-    MenuButton,
-    IconButton,
     useColorModeValue
 } from '@chakra-ui/react'
-import { HumburgerIcon, MoonIcon } from '@chakra-ui/icons'
 import ToggleDark from "./toggleDark";
 
 
@@ -31,11 +20,10 @@ const Navbar = (props) => {
             {...props}
         >
             <div className="container w-full h-14 max-w-screen-md mx-auto px-5 flex items-center relative">
-                {/* <Logo /> */}
-                <a className="font-bold text-2xl mr-5" href="/">Andrea Fay</a>
+                <Logo />
                 <div className="flex mt-2 text-base">
-                    <a className="mr-2 hover:underline px-3" href="/">Works</a>
-                    <a className="hover:underline px-3" href="/">Github</a>
+                    <a className="mr-2 hover:underline px-3" href="/works">Works</a>
+                    <a className="hover:underline px-3" href="https://github.com/andreafay" target="_blank" >Github</a>
                 </div>
                 <div className="ml-auto">
                     <ToggleDark />

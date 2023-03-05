@@ -74,14 +74,14 @@ const Page = () => {
         </Heading>
         <List>
           <ListItem>
-            <Link href="/">
+            <Link href="https://linkedin.com/in/andrea-fay" target="_blank">
               <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoLinkedin/>} >
                 @andrea-fay
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="/">
+            <Link href="https://github.com/andreafay" target="_blank">
               <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub/>} >
                 @andreafay
               </Button>
