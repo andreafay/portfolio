@@ -32,6 +32,7 @@ const Works = () => {
                 </Paragraph>
             </Section>
 
+            <Section>
             <Heading as="h3" fontSize={22} mt={12} textDecoration="underline" fontFamily="mono">
                 Works
             </Heading>
@@ -43,6 +44,7 @@ const Works = () => {
                     TEST TEST TEST TEST
                 </WorkGridItem>
             </div>
+            </Section>
         </Container>
     )
 }
