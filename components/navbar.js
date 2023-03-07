@@ -29,8 +29,8 @@ const Navbar = (props) => {
             <div className="container w-full h-14 max-w-screen-md mx-auto px-5 flex items-center relative">
                 <Logo />
                 <div className="flex mt-2 text-base invisible sm:visible">
-                    <a className="mr-2 hover:underline px-3" href="/works">Works</a>
-                    <a className="hover:underline px-3" href="https://github.com/andreafay" target="_blank" >Github</a>
+                    <Link className="mr-2 hover:underline px-3" href="/works">Works</Link>
+                    <Link className="hover:underline px-3" href="https://github.com/andreafay" target="_blank" >Github</Link>
                 </div>
                 <div className="flex flex-row gap-2 ml-auto">
                     <ToggleDark />
