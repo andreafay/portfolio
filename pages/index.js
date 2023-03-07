@@ -35,7 +35,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>I'm a full-stack developer based in Milan with a passion for travelling.
+          <Paragraph>I&apos;m a full-stack developer based in Milan with a passion for travelling.
             I started working as a web developer in 2021 during covid.
             Now I work remotely for my company and meanwhile I learn new technologies to achieve my dreams! </Paragraph>
           <Box align="center" my={4}>
