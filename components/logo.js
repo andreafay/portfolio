@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Text, useColorModeValue } from "@chakra-ui/react"
 
 import styled from "@emotion/styled"
+import { IoPower } from "react-icons/io5"
 
 const LogoBox = styled.span`
 font-weight: bold;
@@ -17,12 +18,14 @@ padding: 10px;
 const Logo = () => {
 
     return (
-        <Link href="/">
+        <Link href="/" >
             <LogoBox>
+                <IoPower/>
                 <Text color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                       fontFamily='M PLUS Rounded 1c'
                       fontWeight="bold"
-                      ml={3}>
+                      ml={3}
+                      >
                     Andrea Fay
                 </Text>
             </LogoBox>

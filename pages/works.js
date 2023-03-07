@@ -1,4 +1,6 @@
 import { WorkGridItem } from "@/components/grid-item"
+import HeaderPicture from "@/components/headerPicture"
+import HeaderPictureWork from "@/components/headerPictureWork"
 import Layout from "@/components/layouts/article"
 import Paragraph from "@/components/paragraph"
 import Section from "@/components/section"
@@ -11,6 +13,7 @@ const Works = () => {
 
         <Layout>
             <Container>
+                <HeaderPictureWork path="/images/snorlax.gif" />
                 <Heading as="h3" fontSize={22} my={4} textDecoration="underline" fontFamily="mono" >
                     Stack
                 </Heading>
@@ -39,13 +42,16 @@ const Works = () => {
                     <Heading as="h3" fontSize={22} mt={12} textDecoration="underline" fontFamily="mono">
                         Works
                     </Heading>
-                    <div className="grid grid-cols-1 mt-8 gap-6 md:grid-cols-2 text-center">
+                    {/* <div className="grid grid-cols-1 mt-8 gap-6 md:grid-cols-2 text-center">
                         <WorkGridItem id="1" title="test1" thumbnail={propic} >
                             TEST TEST TEST TEST
                         </WorkGridItem>
                         <WorkGridItem id="2" title="test2" thumbnail={propic} >
                             TEST TEST TEST TEST
                         </WorkGridItem>
+                    </div> */}
+                    <div>
+                        <Heading as="h3" mt={4} fontFamily="mono" fontSize={22}>Coming soon!</Heading>
                     </div>
                 </Section>
             </Container>

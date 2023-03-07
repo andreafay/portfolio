@@ -6,12 +6,14 @@ import { Container, Box, Heading, Image, useColorModeValue, Button, List, ListIt
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import Link from "next/link"
 import Layout from "@/components/layouts/article"
+import HeaderPictureAbout from "@/components/headerPicture"
 
 const Page = () => {
   return (
 
     <Layout>
       <Container>
+        <HeaderPictureAbout path="/images/dragonite.gif"/>
         <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} mb={6} p={3} align="center">
           Hello, I&apos;m a fullstack developer based in Italy!
         </Box>
@@ -34,7 +36,7 @@ const Page = () => {
           </Heading>
           <Paragraph>I'm a full-stack developer based in Milan with a passion for travelling.
             I started working as a web developer in 2021 during covid.
-            Now I work remotely for my company and meanwhile, I learn new technologies to achieve my dreams! </Paragraph>
+            Now I work remotely for my company and meanwhile I learn new technologies to achieve my dreams! </Paragraph>
           <Box align="center" my={4}>
             <Link href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -67,7 +69,7 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Sports, Music, Tech, Cryptos
+            Sports, Music, Tech, Videogames & Cryptos
           </Paragraph>
         </Section>
 
