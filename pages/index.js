@@ -7,6 +7,7 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import Link from "next/link"
 import Layout from "@/components/layouts/article"
 import HeaderPictureAbout from "@/components/headerPicture"
+import Footer from "@/components/footer"
 
 const Page = () => {
   return (
@@ -94,9 +95,7 @@ const Page = () => {
             </ListItem>
           </List>
         </Section>
-        <Paragraph className="opacity-40 text-xs text-center font-semibold mt-10">
-          This website is a reproduction of craftz.dog by Takuya Matsuyama.
-        </Paragraph>
+        <Footer/>
       </Container>
     </Layout>
   )
