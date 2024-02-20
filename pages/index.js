@@ -16,7 +16,7 @@ const Page = () => {
       <Container>
         <HeaderPictureAbout path="/images/dragonite.gif"/>
         <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} mb={6} p={3} align="center">
-          Hello, I&apos;m a fullstack developer based in Italy!
+          Hello, I&apos;m a software engineer based in Italy!
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -24,7 +24,7 @@ const Page = () => {
             <Heading as="h2" variant="page title">
               Andre
             </Heading>
-            <p>Web Developer (React, Golang, Java)</p>
+            <p>Software Engineer (Java, Typescript, Golang)</p>
           </Box>
           <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
             <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid"
@@ -61,7 +61,11 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
-            Started working as a Full-Stack Developer
+            Started working as a Junior Full-Stack Developer
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Promoted to Software Engineer
           </BioSection>
         </Section>
 
