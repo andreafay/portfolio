@@ -24,7 +24,8 @@ const Page = () => {
             <Heading as="h2" variant="page title">
               Andre
             </Heading>
-            <p>Software Engineer (Java, Typescript, Golang)</p>
+            <p>Software Engineer 
+              (Java, Typescript, Golang)</p>
           </Box>
           <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
             <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid"
@@ -35,7 +36,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>I&apos;m a full-stack developer based in Milan with a passion for travelling.
+          <Paragraph>I&apos;m a software engineer based in Milan with a passion for travelling.
             I started working as a web developer in 2021 during covid.
             Now I work remotely for my company and meanwhile I learn new technologies to achieve my dreams! </Paragraph>
           <Box align="center" my={4}>
